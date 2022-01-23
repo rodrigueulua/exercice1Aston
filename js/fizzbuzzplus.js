@@ -30,17 +30,22 @@ let nombreClics = 0;
  * 
  */
 function incrementOneNumber() {
-    // Récuperation de l'element DIV par son ID
+    // Récuperation de l'element H3 par son ID
     let compteur = document.getElementById("resultat");
+
+    // Récuperation de l'element P par son ID
+    let chiffre = document.getElementById("chiffre");
     
     // Test de la valeur afficher dans le DOM et affectation de la valeur
     if (compteur.textContent == ""){
         nombreClics;
-        compteur.innerHTML = nombreClics +" : "+fizzBuzz(nombreClics);
+        compteur.innerHTML =fizzBuzz(nombreClics);
+        chiffre.innerHTML = nombreClics;
     }
     else{
         nombreClics++
-        compteur.innerHTML = nombreClics +" : "+fizzBuzz(nombreClics);
+        compteur.innerHTML = fizzBuzz(nombreClics);
+        chiffre.innerHTML = nombreClics;
     }
 }
 
@@ -51,12 +56,17 @@ function incrementOneNumber() {
 function decrementOneNumber() {
     // Récuperation de l'element DIV par son ID
     let compteur = document.getElementById("resultat");
-    
+
+    // Récuperation de l'element P par son ID
+    let chiffre = document.getElementById("chiffre");
+
     // Décrémentation
     nombreClics--;
 
     // Affectation de la valeur dans le DOM
-    compteur.innerHTML = nombreClics +" : "+fizzBuzz(nombreClics);
+    compteur.innerHTML = fizzBuzz(nombreClics);
+    chiffre.innerHTML = nombreClics;
+
 }
 
 // Appel des fonctions
