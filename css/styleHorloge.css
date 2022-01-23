@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    height: 70%;
+    display: flex;
+}
+
+#heure{
+    margin: auto;
+    font-size: 40px;
+    border: dashed 2px black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f1f2f6;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
