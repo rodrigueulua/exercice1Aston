@@ -1,0 +1,57 @@
+h1, h3{
+    text-align: center;
+    padding: 10px;
+}
+
+nav{
+    text-align: center;
+}
+
+.menuPrincipal{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+a:hover{
+    border: solid 1px black;
+}
+
+hr{
+    margin-top: 10px;
+    width: 70%;
+}
+
+section{
+    display: flex;
+    justify-content:space-around;
+    height: 600px;
+}
+
+.cards{
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    margin: auto;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.cardLink{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    margin: 10px;
+    text-align: justify;
+}
